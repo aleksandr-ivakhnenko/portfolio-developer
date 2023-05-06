@@ -9,34 +9,69 @@
 		<link rel="stylesheet" href="stylesheet/style.css">
 		<title>Александр Ивахненко — фронтенд разработчик и дизайнер сайтов</title>
 	</head>
-	<body>
+	<body class="body_fixed">
 		<div class="wrapper">
 			<header class="header">
-				<div class="header__container container">
-					<div class="header__logo">
-						<a class="header__logo-link" href="index.html">Ivakhnenko</a>
+				<div class="container">
+					<div class="header__inner">
+						<div class="header__logo">
+							<a class="header__logo-link js-logo-link header__logo-link_preload" href="index.html">
+								<img class="header__logo-left js-logo-left header__logo-left_preload" src="images/logo-left.svg" alt="Левая часть логотипа">
+								<img class="header__logo-line js-logo-line header__logo-line_preload" src="images/logo-line.svg" alt="Средняя часть логотипа">
+								<img class="header__logo-right js-logo-right header__logo-right_preload" src="images/logo-right.svg" alt="Правая часть логотипа">
+							</a>
+						</div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a class="nav__link" href="#projects">Портфолио</a></li>
+								<li class="nav__item"><a class="nav__link" href="#skills">Компетенции</a></li>
+								<li class="nav__item"><a class="nav__link" href="#services">Услуги</a></li>
+								<li class="nav__item"><a class="nav__link" href="#contact-me">Контакты</a></li>
+							</ul>
+						</nav>
+						<button class="header__button button-menu js-button-menu">
+							<span class="button-menu__icon js-button-menu__icon"></span>
+						</button>
+						<div class="menu-burger js-menu-burger">
+							<div class="menu-burger__content js-menu-burger__content">
+								<div class="menu-burger__logo">
+									<img class="menu-burger__img" src="images/logo.svg" alt="Логотип">
+								</div>
+								<nav class="menu-burger__nav">
+									<ul class="menu-burger__list">
+										<li class="menu-burger__item-list"><a class="menu-burger__link " href="#projects">Портфолио</a></li>
+										<li class="menu-burger__item-list"><a class="menu-burger__link" href="#skills">Компетенции</a></li>
+										<li class="menu-burger__item-list"><a class="menu-burger__link" href="#services">Услуги</a></li>
+										<li class="menu-burger__item-list"><a class="menu-burger__link" href="#contact-me">Контакты</a></li>
+									</ul>
+								</nav>
+								<div class="menu-burger__contacts">
+									<p class="menu-burger__text">для связи:</p>
+									<a class="menu-burger__link-telegram" href="https://t.me/alexViefbix" target="_blank">Telegram</a>
+									<a class="menu-burger__link-mail" href="mailto:viefbix@iclous.com">Mail</a>
+									<a class="menu-burger__link-instagram" href="https://instagram.com/alex_viefbix?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<nav class="header__nav nav">
-						<ul class="nav__list">
-							<li class="nav__item"><a class="nav__link" href="#projects">Портфолио</a></li>
-							<li class="nav__item"><a class="nav__link" href="#skills">Компетенции</a></li>
-							<li class="nav__item"><a class="nav__link" href="#services">Услуги</a></li>
-							<li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
-						</ul>
-					</nav>
 				</div>
+				<div class="header__overlay js-overlay header__overlay_preload"></div>
 			</header>
-			<main class="main">
+			<div class="main">
 				<section class="about-me">
-					<div class="about-me__container container">
-						<img class="about-me__img-photo" src="images/photo.png" alt="Фото Александра Ивахненко">
-						<h1 class="about-me__title">Привет, я Саша — фронтенд разработчик и дизайнер сайтов</h1>
-						<p class="about-me__description">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов</p>
+					<div class="container">
+						<div class="about-me__wrapper">
+							<div class="about-me__content">
+								<p class="about-me__description">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов</p>
+								<h1 class="about-me__title main-title">Привет, я Саша — фронтенд разработчик и дизайнер сайтов</h1>
+							</div>
+							<div class="about-me__image">
+								<img class="about-me__img-photo" src="images/photo.png" alt="Фото Александра Ивахненко">
+							</div>
+						</div>
 					</div>
-
-					<img class="about-me__img" src="images/backgroung-main.png" alt="Фоновое изображение синего цвета">
 				</section>
-				<section class="projects" id="projects">
+				<!-- <section class="projects" id="projects">
 					<div class="projects__container container">
 						<h2 class="projects__title title">Самые свежие проекты</h2>
 						<div class="projects__items">
@@ -67,8 +102,8 @@
 						</div>
 						<a class="projects__btn btn" href="#">Смотреть все проекты</a>
 					</div>
-				</section>
-				<section class="skills" id="skills">
+				</section> -->
+				<!-- <section class="skills" id="skills">
 					<div class="skills__container container">
 						<h2 class="skills__title title">Мои компетенции</h2>
 						<div class="skills__items">
@@ -90,8 +125,8 @@
 							</div>
 						</div>
 					</div>
-				</section>
-				<section class="services" id="services">
+				</section> -->
+				<!-- <section class="services" id="services">
 					<div class="services__container container">
 						<h2 class="services__title title--size-small">Помогаю реализовать широкий спектр задач</h2>
 						<div class="services__items">
@@ -124,8 +159,8 @@
 							</div>
 						</div>
 					</div>
-				</section>
-				<section class="contacts" id="contacts">
+				</section> -->
+				<!-- <section class="contacts" id="contacts">
 					<div class="contacts__container container">
 						<h2 class="contacts__title title--size-small">для связи:</h2>
 						<ul class="contacts__list">
@@ -134,14 +169,14 @@
 							<li class="contacts__item"><a class="contacts__link" href="mailto:viefbix@icloud.com">mail</a></li>
 						</ul>
 					</div>
-				</section>
-			</main>
-			<footer class="footer">
+				</section> -->
+			</div>
+			<!-- <footer class="footer">
 				<div class="footer__container container">
 					<p class="footer__description">Портфолио фротнтенд-разработчика Александра Ивахненко</p>
 					<p class="footer__copyright">Все права защищены. 2023</p>
 				</div>
-			</footer>
+			</footer> -->
 		</div>
 
 		<script src="js/index.js"></script>

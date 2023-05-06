@@ -1,0 +1,100 @@
+@import "colors_variables";
+
+button {
+	font-family: "IBM Plex Mono";
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 151px;
+    padding: 0 119px;
+	border: 1px solid #127DFF;
+    border-radius: 10px;
+	background-color: #127DFF;
+	font-size: 30px;
+	line-height: 39px;
+	color: #000000;
+	transition: all 0.3s;
+
+	&:hover {
+		background: none;
+		color: #127DFF;
+	}
+}
+
+.button-menu {
+	position: relative;
+	z-index: 1;
+	width: 63px;
+	height: 63px;
+	cursor: pointer;
+
+	&_open {
+
+	}
+	
+	&__icon {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 50%;
+		transform: translateX(-50%);
+		width: 40px;
+		height: 3px;
+		background-color: $colorWhite;
+		border-radius: 50px;
+		transition: all 0.3s ease-in-out;
+		
+		&::before {
+			content: "";
+			position: absolute;
+			top: -12px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 40px;
+			height: 3px;
+			background-color: $colorWhite;
+			border-radius: 50px;
+			transition: all 0.3s ease-in-out;
+		}
+		
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -12px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 40px;
+			height: 3px;
+			background-color: $colorWhite;
+			border-radius: 50px;
+			transition: all 0.3s ease-in-out;
+			
+			
+			@media (max-width: 767px) {
+				
+			}
+		}
+		
+		&_open {
+			width: 0;
+			
+			&::before {
+				width: 35px;
+				top: 0;
+				transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+			}
+			
+			&::after {
+				width: 35px;
+				bottom: 0;
+				transform: translateX(-50%) translateY(-50%) rotate(45deg);
+			}
+		}
+	}
+}

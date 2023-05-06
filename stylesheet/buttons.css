@@ -1,0 +1,98 @@
+button {
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  min-height: 151px;
+  padding: 0 119px;
+  border: 1px solid #127DFF;
+  border-radius: 10px;
+  background-color: #127DFF;
+  font-size: 30px;
+  line-height: 39px;
+  color: #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.button:hover {
+  background: none;
+  color: #127DFF;
+}
+
+.button-menu {
+  position: relative;
+  z-index: 1;
+  width: 63px;
+  height: 63px;
+  cursor: pointer;
+}
+.button-menu__icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button-menu__icon::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button-menu__icon::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button-menu__icon_open {
+  width: 0;
+}
+.button-menu__icon_open::before {
+  width: 35px;
+  top: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.button-menu__icon_open::after {
+  width: 35px;
+  bottom: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}

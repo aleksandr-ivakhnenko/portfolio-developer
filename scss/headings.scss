@@ -1,0 +1,39 @@
+@import "colors_variables";
+
+.main-title {
+	font-size: 58px;
+	line-height: 60px;
+	color: $colorWhite;
+
+	@media (max-width: 1199px) {
+		font-size: 36px;
+		line-height: 46px;
+	}
+
+    @media (max-width: 767px) {
+		font-size: 28px;
+		line-height: 36px;
+	}
+}
+
+.title {
+	font-size: 55px;
+	line-height: 72px;
+	color: $colorWhite;
+}
+
+.title--size-small {
+	font-size: 35px;
+	line-height: 46px;
+}
+
+.subtitle {
+	font-size: 35px;
+	line-height: 46px;
+	color: $colorBlue;
+}
+
+.description {
+	font-size: 22px;
+	line-height: 29px;
+}

@@ -1,0 +1,49 @@
+@import "colors_variables";
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+
+    @media (max-width: 1199px) {
+        display: none;
+    }
+	
+	&__list {
+		display: flex;
+
+		& > *:not(:last-child) {
+			margin-right: 50px;
+		}
+	}
+
+	&__item {
+
+	}
+
+	&__link {
+        position: relative;
+		font-size: 18px;
+		line-height: 23px;
+        text-transform: uppercase;
+        padding: 10px 0;
+        
+		&:hover {
+            
+            &::after {
+                width: 100%;
+            }
+		}
+        
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1.5px;
+            background-color: $colorWhite;
+            transition: all 0.5s;
+        }
+	}
+}

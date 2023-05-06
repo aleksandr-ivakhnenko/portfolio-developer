@@ -1,0 +1,85 @@
+@import "colors_variables";
+
+.menu-burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: opacity 0.2s, visibility 0.2s;
+    opacity: 0;
+    visibility: hidden;
+
+    &_open {
+        opacity: 1;
+        visibility: visible;
+
+        & .menu-burger__content {
+            transform: translateX(0);
+        }
+    }
+
+    &__content {
+        padding: 80px 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $colorDark;
+        width: 362px;
+        height: 100%;
+        overflow-y: auto;
+        transition: transform 0.3s;
+        transform: translateX(100%);
+    }
+
+    &__logo {
+        margin-bottom: 50px;
+    }
+    
+    &__img {
+        display: block;
+    }
+
+    &__nav {
+        margin-bottom: 90px;
+    }
+
+    &__list {
+    }
+
+    &__item-list {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        font-size: 25px;
+        line-height: 32px;
+        color: $colorWhite;
+        text-transform: uppercase;
+    }
+
+    &__contacts {
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 22px;
+        opacity: 0.5;
+        margin-bottom: 7px;
+    }
+
+    &__link-telegram,
+    &__link-mail,
+    &__link-instagram {
+        font-size: 20px;
+        line-height: 46px;
+        color: $colorWhite;
+        display: block;
+        text-transform: uppercase;
+    }
+}

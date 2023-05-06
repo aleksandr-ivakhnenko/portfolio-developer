@@ -1,0 +1,70 @@
+.menu-burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 0.2s, visibility 0.2s;
+  opacity: 0;
+  visibility: hidden;
+}
+.menu-burger_open {
+  opacity: 1;
+  visibility: visible;
+}
+.menu-burger_open .menu-burger__content {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.menu-burger__content {
+  padding: 80px 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #191C19;
+  width: 362px;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.menu-burger__logo {
+  margin-bottom: 50px;
+}
+.menu-burger__img {
+  display: block;
+}
+.menu-burger__nav {
+  margin-bottom: 90px;
+}
+.menu-burger__item-list {
+  margin-bottom: 20px;
+}
+.menu-burger__item-list:last-child {
+  margin-bottom: 0;
+}
+.menu-burger__link {
+  font-size: 25px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.menu-burger__text {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.5;
+  margin-bottom: 7px;
+}
+.menu-burger__link-telegram, .menu-burger__link-mail, .menu-burger__link-instagram {
+  font-size: 20px;
+  line-height: 46px;
+  color: #FFFFFF;
+  display: block;
+  text-transform: uppercase;
+}

@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 
 article, aside, details, figcaption, figure, 
@@ -50,4 +51,14 @@ table {
 
 a {
 	text-decoration: none;
+}
+
+img {
+	display: block;
+}
+
+button {
+	background: none;
+	box-sizing: border-box;
+	border: none;
 }

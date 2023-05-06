@@ -1,0 +1,39 @@
+.main-title {
+  font-size: 58px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+@media (max-width: 1199px) {
+  .main-title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+@media (max-width: 767px) {
+  .main-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.title {
+  font-size: 55px;
+  line-height: 72px;
+  color: #FFFFFF;
+}
+
+.title--size-small {
+  font-size: 35px;
+  line-height: 46px;
+}
+
+.subtitle {
+  font-size: 35px;
+  line-height: 46px;
+  color: #127DFF;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 29px;
+}
