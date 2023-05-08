@@ -15,20 +15,37 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  min-height: 151px;
+  min-height: 153px;
   padding: 0 119px;
   border: 1px solid #127DFF;
   border-radius: 10px;
   background-color: #127DFF;
   font-size: 30px;
   line-height: 39px;
-  color: #000000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  color: #FFFFFF;
+  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .button:hover {
   background: none;
   color: #127DFF;
+}
+@media (max-width: 1199px) {
+  .button {
+    min-height: 124px;
+    padding: 0 91px;
+    font-size: 24.2609px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .button {
+    width: 100%;
+    min-height: 80px;
+    padding: 0 50px;
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 
 .button-menu {
@@ -50,8 +67,8 @@ button {
   height: 3px;
   background-color: #FFFFFF;
   border-radius: 50px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 .button-menu__icon::before {
   content: "";
@@ -64,8 +81,10 @@ button {
   height: 3px;
   background-color: #FFFFFF;
   border-radius: 50px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out, top 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, top 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, top 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, top 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .button-menu__icon::after {
   content: "";
@@ -78,8 +97,10 @@ button {
   height: 3px;
   background-color: #FFFFFF;
   border-radius: 50px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out, bottom 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, bottom 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, bottom 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, bottom 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .button-menu__icon_open {
   width: 0;

@@ -7,9 +7,10 @@
     background-image: url(../images/backgroung-main.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
 
     @media (max-width: 767px) {
-        padding: 111px 0 48px 0;
+        padding: 111px 0 50px 0;
     }
 
     &__wrapper {
@@ -22,6 +23,7 @@
         @media (max-width: 767px) {
             gap: 20;
             min-height: 100%;
+            justify-content: center;
         }
     }
 
@@ -40,6 +42,8 @@
             order: 1;
             flex: 0 1 auto;
             min-height: 100%;
+            text-align: center;
+            align-items: center;
         }
     }
 	
@@ -55,7 +59,7 @@
         max-width: 430px;
 		font-size: 20px;
 		line-height: 26px;
-		color: #EBEBEB;
+		color: $colorGreyLight;
         margin-bottom: 30px;
 
         @media (max-width: 1199px) {
@@ -64,7 +68,6 @@
         }
 
         @media (max-width: 767px) {
-            width: 100%;
             order: 1;
             font-size: 15px;
             line-height: 20px;
@@ -84,8 +87,8 @@
     }
 
     &__img-photo {
-		width: 80%;
-		height: 80%;
+		width: 100%;
+		height: 100%;
         object-fit: cover;
         object-position: center;
 		border-radius: 50%;

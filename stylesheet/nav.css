@@ -16,8 +16,11 @@
   display: -ms-flexbox;
   display: flex;
 }
-.nav__list > *:not(:last-child) {
-  margin-right: 50px;
+.nav__item {
+  margin-left: 50px;
+}
+.nav__item:first-child {
+  margin-bottom: 0;
 }
 .nav__link {
   position: relative;
@@ -39,6 +42,6 @@
   width: 0;
   height: 1.5px;
   background-color: #FFFFFF;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }

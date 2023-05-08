@@ -6,6 +6,7 @@
 @import "menu-burger.css";
 @import "header.css";
 @import "about-me.css";
+@import "projects.css";
 body {
   font-family: "IBM Plex Mono";
   font-size: 18px;
@@ -16,7 +17,7 @@ body {
   overflow: hidden;
 }
 
-h1, h2, h3, p, a, button {
+h1, h2, h3, p, a, span, button {
   letter-spacing: -0.03em;
   color: #FFFFFF;
 }

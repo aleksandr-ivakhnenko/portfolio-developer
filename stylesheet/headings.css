@@ -19,20 +19,37 @@
 .title {
   font-size: 55px;
   line-height: 72px;
-  color: #FFFFFF;
+  color: #191C19;
+}
+@media (max-width: 1199px) {
+  .title {
+    font-size: 45px;
+    line-height: 58px;
+  }
+}
+@media (max-width: 767px) {
+  .title {
+    max-width: 268px;
+    font-size: 30px;
+    line-height: 39px;
+  }
 }
 
 .title--size-small {
   font-size: 35px;
   line-height: 46px;
 }
-
 .subtitle {
   font-size: 35px;
   line-height: 46px;
   color: #127DFF;
 }
-
+@media (max-width: 1199px) {
+  .subtitle {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
 .description {
   font-size: 22px;
   line-height: 29px;

@@ -2,7 +2,6 @@ const LOGO_LINK_PRELOAD_CLASSNAME = 'header__logo-link_preload';
 const LOGO_LINK_OPEN_CLASSNAME = 'header__logo-link_open';
 const OVERLAY_PRELOAD_CLASSNAME = 'header__overlay_preload';
 const BODY_FIXED_CLASSNAME = 'body_fixed';
-const BUTTON_MENU_OPEN_CLASSNAME = 'button-menu_open';
 const BUTTON_MENU_ICON_OPEN_CLASSNAME = 'button-menu__icon_open';
 const MENU_BURGER_OPEN_CLASSNAME = 'menu-burger_open';
 
@@ -61,7 +60,6 @@ function animationLogo() {
 
 function toggleBurger() {
     bodyNode.classList.toggle(BODY_FIXED_CLASSNAME);
-    buttonMenuNode.classList.toggle(BUTTON_MENU_OPEN_CLASSNAME);
     buttonMenuIconNode.classList.toggle(BUTTON_MENU_ICON_OPEN_CLASSNAME);
     menuBurgerNode.classList.toggle(MENU_BURGER_OPEN_CLASSNAME);
 

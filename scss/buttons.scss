@@ -11,19 +11,35 @@ button {
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 151px;
+    min-height: 153px;
     padding: 0 119px;
-	border: 1px solid #127DFF;
+	border: 1px solid $colorBlue;
     border-radius: 10px;
-	background-color: #127DFF;
+	background-color: $colorBlue;
 	font-size: 30px;
 	line-height: 39px;
-	color: #000000;
-	transition: all 0.3s;
+	color: $colorWhite;
+	transition: background 0.3s ease-in-out,
+				color 0.3s ease-in-out;
 
 	&:hover {
 		background: none;
-		color: #127DFF;
+		color: $colorBlue;
+	}
+
+	@media (max-width: 1199px) {
+		min-height: 124px;
+		padding: 0 91px;
+		font-size: 24.2609px;
+		line-height: 32px;
+	}
+	
+	@media (max-width: 767px) {
+		width: 100%;
+		min-height: 80px;
+		padding: 0 50px;
+		font-size: 18px;
+		line-height: 23px;
 	}
 }
 
@@ -33,10 +49,6 @@ button {
 	width: 63px;
 	height: 63px;
 	cursor: pointer;
-
-	&_open {
-
-	}
 	
 	&__icon {
 		position: absolute;
@@ -48,7 +60,7 @@ button {
 		height: 3px;
 		background-color: $colorWhite;
 		border-radius: 50px;
-		transition: all 0.3s ease-in-out;
+		transition: width 0.3s ease-in-out;
 		
 		&::before {
 			content: "";
@@ -60,7 +72,9 @@ button {
 			height: 3px;
 			background-color: $colorWhite;
 			border-radius: 50px;
-			transition: all 0.3s ease-in-out;
+			transition: width 0.3s ease-in-out,
+						top 0.3s ease-in-out,
+						transform 0.3s ease-in-out;
 		}
 		
 		&::after {
@@ -73,12 +87,9 @@ button {
 			height: 3px;
 			background-color: $colorWhite;
 			border-radius: 50px;
-			transition: all 0.3s ease-in-out;
-			
-			
-			@media (max-width: 767px) {
-				
-			}
+			transition: width 0.3s ease-in-out,
+						bottom 0.3s ease-in-out,
+						transform 0.3s ease-in-out;
 		}
 		
 		&_open {

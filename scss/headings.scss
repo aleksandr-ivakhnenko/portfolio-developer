@@ -19,21 +19,47 @@
 .title {
 	font-size: 55px;
 	line-height: 72px;
-	color: $colorWhite;
+	color: $colorDark;
+
+	@media (max-width: 1199px) {
+		font-size: 45px;
+		line-height: 58px;
+	}
+
+	@media (max-width: 767px) {
+		max-width: 268px;
+		font-size: 30px;
+		line-height: 39px;
+	}
 }
 
 .title--size-small {
 	font-size: 35px;
 	line-height: 46px;
+
+	@media (max-width: 1199px) {}
+
+	@media (max-width: 767px) {}
 }
 
 .subtitle {
 	font-size: 35px;
 	line-height: 46px;
 	color: $colorBlue;
+
+	@media (max-width: 1199px) {
+		font-size: 28px;
+		line-height: 36px;
+	}
+
+	@media (max-width: 767px) {}
 }
 
 .description {
 	font-size: 22px;
 	line-height: 29px;
+
+	@media (max-width: 1199px) {}
+
+	@media (max-width: 767px) {}
 }

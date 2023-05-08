@@ -8,6 +8,7 @@
 
 @import "header.css";
 @import "about-me.css";
+@import "projects.css";
 
 // Common styles
 body {
@@ -21,7 +22,7 @@ body {
 	overflow: hidden;
 }
 
-h1, h2, h3, p, a, button {
+h1, h2, h3, p, a, span, button {
 	letter-spacing: -0.03em;
 	color: $colorWhite;
 }
