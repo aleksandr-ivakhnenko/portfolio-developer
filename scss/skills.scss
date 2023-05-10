@@ -1,48 +1,88 @@
+@import "colors_variables";
+
 .skills {
 	padding: 75px 0 75px 0;
-
-	&__container {
-
-		& > *:not(:last-child) {
-			margin-bottom: 48px;
-		}
+	
+	@media (max-width: 767px) {
+		padding: 50px 0 50px 0;
 	}
 
 	&__title {
+		margin-bottom: 80px;
+		
+		@media (max-width: 1199px) {
+			margin-bottom: 60px;
+		}
 	}
 
 	&__items {
-
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px 47px;
+		
 		& :nth-child(1) ::before {
-			background-image: url(../icons/icon-html.svg);
-			margin-bottom: 12px;
-		}
+			background-image: url(../icons/icon-html_desktop.svg);
 
+			@media (max-width: 1199px) {
+				background-image: url(../icons/icon-html_tablet.svg);
+			}
+		}
+		
 		& :nth-child(2) ::before {
-			background-image: url(../icons/icon-js.svg);
-		}
+			background-image: url(../icons/icon-js_desktop.svg);
 
+			@media (max-width: 1199px) {
+				background-image: url(../icons/icon-js_tablet.svg);
+			}
+		}
+		
 		& :nth-child(3) ::before {
-			background-image: url(../icons/icon-device.svg);
-		}
+			background-image: url(../icons/icon-device_desktop.svg);
 
+			@media (max-width: 1199px) {
+				background-image: url(../icons/icon-device_tablet.svg);
+			}
+		}
+		
 		& :nth-child(4) ::before {
-			background-image: url(../icons/icon-react.svg);
-		}
+			background-image: url(../icons/icon-react_desktop.svg);
 
-		& > *:not(:last-child) {
-			margin-bottom: 60px;
+			@media (max-width: 1199px) {
+				background-image: url(../icons/icon-react_tablet.svg);
+			}
+		}
+		
+		@media (max-width: 1199px) {
+			gap: 41px 37px;
+		}
+		
+		@media (max-width: 767px) {
+			gap: 60px 0;
 		}
 	}
 }
 
-.item-skill {
-
-	& > *:not(:last-child) {
-		margin-bottom: 15px;
+.skill {
+	flex: 0 1 calc(50% - 23.5px);
+	
+	@media (max-width: 1199px) {
+		flex: 0 1 calc(50% - 18.5px);
+	}
+	
+	@media (max-width: 767px) {
+		flex: 1 1 100%;
 	}
 
 	&__subtitle {
+		margin-bottom: 15px;
+
+		@media (max-width: 1199px) {
+			margin-bottom: 13px;
+		}
+		
+		@media (max-width: 767px) {
+			margin-bottom: 15px;
+		}
 
 		&::before {
 			display: block;
@@ -50,15 +90,17 @@
 			width: 45px;
 			height: 44px;
 			border-radius: 10px;
-			background-color: #127DFF;
+			background-color: $colorBlue;
 			background-repeat: no-repeat;
 			background-position: center;
-			color: #FFFFFF;
-			margin-bottom: 16px;
+			color: $colorWhite;
+			margin-bottom: 15px;
+			
+			@media (max-width: 1199px) {
+				width: 36px;
+				height: 36px;
+				margin-bottom: 10px;
+			}
 		}
-	}
-
-	&__description {
-		max-width: 778px;
 	}
 }

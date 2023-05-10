@@ -20,46 +20,75 @@
 	font-size: 55px;
 	line-height: 72px;
 	color: $colorDark;
-
+	
 	@media (max-width: 1199px) {
 		font-size: 45px;
 		line-height: 58px;
 	}
-
+	
 	@media (max-width: 767px) {
 		max-width: 268px;
 		font-size: 30px;
 		line-height: 39px;
 	}
-}
 
-.title--size-small {
-	font-size: 35px;
-	line-height: 46px;
+	&_size-big {
+		font-size: 60px;
+		line-height: 60px;
 
-	@media (max-width: 1199px) {}
+		@media (max-width: 1199px) {
+			font-size: 40px;
+			line-height: 40px;
+		}
+		
+		@media (max-width: 767px) {
+			font-size: 35px;
+			line-height: 37px;
+		}
+	}
 
-	@media (max-width: 767px) {}
+	&_size-small {
+		font-size: 35px;
+		line-height: 46px;
+	
+		@media (max-width: 1199px) {
+			font-size: 28px;
+			line-height: 37px;
+		}
+	}
 }
 
 .subtitle {
 	font-size: 35px;
 	line-height: 46px;
-	color: $colorBlue;
+	color: $colorBlueLight;
 
 	@media (max-width: 1199px) {
 		font-size: 28px;
 		line-height: 36px;
 	}
 
-	@media (max-width: 767px) {}
+	&_size-big {
+		font-size: 55px;
+		line-height: 110%;
+
+		@media (max-width: 1199px) {
+			font-size: 45px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 35px;
+		}
+	}
 }
 
 .description {
 	font-size: 22px;
 	line-height: 29px;
+	color: $colorGreyLight;
 
-	@media (max-width: 1199px) {}
-
-	@media (max-width: 767px) {}
+	@media (max-width: 1199px) {
+		font-size: 18px;
+		line-height: 23px;
+	}
 }

@@ -1,0 +1,149 @@
+@import "colors_variables";
+
+.contact-me {
+	background-color: $colorDark;
+
+	@media (max-width: 1199px) {
+		padding: 50px 0;
+	}
+
+	&__title {
+		margin-bottom: 60px;
+
+		@media (max-width: 1199px) {
+			margin-bottom: 40px;
+			//max-width: 373px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 1199px) {
+			gap: 0 122px;
+		}
+
+		@media (max-width: 767px) {
+			gap: 0;
+		}
+	}
+
+	&__content {
+		margin-left: 32px;
+		flex: 0 1 50%;
+		
+		@media (max-width: 1199px) {}
+		
+		@media (max-width: 767px) {
+			flex: 1 1 auto;
+			margin: 0;
+		}
+	}
+
+	&__form {
+		margin-bottom: 60px;
+
+		@media (max-width: 1199px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__input {
+		display: block;
+		box-sizing: border-box;
+		border: 0;
+		margin: 0;
+		padding: 0;
+		padding: 15px 40px;
+		width: 100%;
+		min-height: 60px;
+		border-radius: 50px;
+		background-color: $colorGreyDark;
+		font-family: 'IBM Plex Mono';
+		font-size: 22px;
+		line-height: 29px;
+		color: $colorWhite;
+		margin-bottom: 26px;
+		
+		@media (max-width: 1199px) {
+			padding: 10px 24px;
+			min-height: 41px;
+			font-size: 16px;
+			line-height: 21px;
+			margin-bottom: 17px;
+		}
+		
+		@media (max-width: 767px) {
+			padding: 9px 21px;
+			min-height: 38px;
+			font-size: 15px;
+			line-height: 20px;
+			margin-bottom: 15px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+		
+		&::placeholder {
+			color: $colorWhite;
+		}
+
+		&:focus {
+            outline: none;
+        }
+	}
+
+	&__button {
+		min-height: 70px;
+		background-color: $colorBlue;
+		font-size: 22px;
+		line-height: 29px;
+		padding: 19px 169px;
+		border-radius: 10px;
+		cursor: pointer;
+
+		@media (max-width: 1199px) {
+			min-height: 47px;
+			font-size: 16px;
+			line-height: 21px;
+			padding: 12px 111px;
+		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+	&__image {
+		flex: 0 1 50%;
+//
+		@media (max-width: 1199px) {}
+
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+	
+	&__picture {
+	}
+	
+	&__source {
+	}
+	
+	&__img {
+		transform: translateX(125px);
+		border-radius: 0 0 50px 0;
+		
+
+		@media (max-width: 1199px) {
+			transform: translateX(0);
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		@media (max-width: 767px) {}
+	}
+}

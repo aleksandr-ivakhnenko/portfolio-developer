@@ -7,10 +7,6 @@
 		padding: 100px 0 50px 0;
 	}
 
-	&__container {
-
-	}
-
 	&__title {
 		margin-bottom: 40px;
 
@@ -34,9 +30,6 @@
 			margin-bottom: 60px;
 		}
 	}
-
-	&__button {
-	}
 }
 
 .project {
@@ -56,6 +49,10 @@
 		z-index: 5;
 		border-radius: 30px;
 		transition: all 0.3s;
+
+		@media (max-width: 1199px) {
+			height: 24px;
+		}
 
 		&:hover {
 			background-color: rgba(0, 0, 0, 0.3);
