@@ -19,6 +19,7 @@ button {
 	font-size: 30px;
 	line-height: 39px;
 	color: $colorWhite;
+	cursor: pointer;
 	transition: background 0.3s ease-in-out,
 				color 0.3s ease-in-out;
 
@@ -40,6 +41,24 @@ button {
 		padding: 0 50px;
 		font-size: 18px;
 		line-height: 23px;
+	}
+
+	&_form {
+		min-height: 70px;
+		font-size: 22px;
+		line-height: 29px;
+		padding: 19px 169px;
+	
+		@media (max-width: 1199px) {
+			min-height: 47px;
+			font-size: 16px;
+			line-height: 21px;
+			padding: 12px 111px;
+		}
+	
+		@media (max-width: 767px) {
+			width: 100%;
+		}
 	}
 }
 

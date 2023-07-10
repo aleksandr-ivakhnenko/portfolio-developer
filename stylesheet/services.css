@@ -1,5 +1,4 @@
 .services {
-  background-color: #191C19;
   padding: 75px 0 150px 0;
 }
 @media (max-width: 1199px) {
@@ -77,6 +76,7 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 calc(50% - 35px);
           flex: 0 1 calc(50% - 35px);
+  color: #FFFFFF;
 }
 @media (max-width: 767px) {
   .service__description {

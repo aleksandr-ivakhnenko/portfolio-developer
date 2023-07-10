@@ -39,6 +39,7 @@
 }
 .menu-burger__img {
   display: block;
+  height: 55px;
 }
 .menu-burger__nav {
   margin-bottom: 90px;
@@ -58,6 +59,7 @@
 .menu-burger__text {
   font-size: 16px;
   line-height: 22px;
+  color: #FFFFFF;
   opacity: 0.5;
   margin-bottom: 7px;
 }

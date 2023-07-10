@@ -9,16 +9,14 @@
 		<link rel="stylesheet" href="stylesheet/style.css">
 		<title>Александр Ивахненко — фронтенд разработчик и дизайнер сайтов</title>
 	</head>
-	<body class="body_fixed">
+	<body>
 		<div class="wrapper">
 			<header class="header">
 				<div class="container">
 					<div class="header__inner">
 						<div class="header__logo">
-							<a class="header__logo-link js-logo-link header__logo-link_preload" href="index.html">
-								<img class="header__logo-left js-logo-left header__logo-left_preload" src="images/logo-left.svg" alt="Левая часть логотипа">
-								<img class="header__logo-line js-logo-line header__logo-line_preload" src="images/logo-line.svg" alt="Средняя часть логотипа">
-								<img class="header__logo-right js-logo-right header__logo-right_preload" src="images/logo-right.svg" alt="Правая часть логотипа">
+							<a class="header__logo-link" href="index.html">
+								<img class="header__logo-img" src="images/logo.svg" alt="Логотип">
 							</a>
 						</div>
 						<nav class="header__nav nav">
@@ -55,7 +53,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="header__overlay js-overlay header__overlay_preload"></div>
 			</header>
 			<div class="main">
 				<section class="about-me">
@@ -140,7 +137,7 @@
 				</section>
 				<section class="services" id="services">
 					<div class="container">
-						<h2 class="services__title title_size-small">Помогаю реализовать широкий спектр задач</h2>
+						<h2 class="services__title title title_size-small">Помогаю реализовать широкий спектр задач</h2>
 						<ul class="services__items">
 							<li class="service">
 								<div class="service__image">
@@ -188,12 +185,12 @@
 					<div class="container">
 						<div class="contact-me__wrapper">
 							<div class="contact-me__content">
-								<h2 class="contact-me__title title_size-big">Для связи со мной заполните простую форму</h2>
+								<h2 class="contact-me__title title title_size-big">Для связи со мной заполните простую форму</h2>
 								<form class="contact-me__form" id="contact-me__form" method="get">
 									<input class="contact-me__input" type="text" name="name" placeholder="Имя Фамилия">
 									<input class="contact-me__input" type="email" name="email" placeholder="Электронная почта">
 								</form>
-								<button class="contact-me__button" type="submit" form="contact-me__form">Отправить</button>
+								<button class="contact-me__button button button_form" type="submit" form="contact-me__form">Отправить</button>
 							</div>
 							<div class="contact-me__image">
 								<picture class="contact-me__picture">
@@ -206,9 +203,25 @@
 				</section>
 			</div>
 			<footer class="footer">
-				<div class="footer__container container">
-					<p class="footer__description">Портфолио фротнтенд-разработчика Александра Ивахненко</p>
-					<p class="footer__copyright">Все права защищены. 2023</p>
+				<div class="container">
+					<div class="footer__top">
+						<p class="footer__title">Портфолио фронтенд-разработчика Александра Ивахненко</p>
+						<ul class="footer__contacts-list">
+							<li class="footer__item-list">
+								<a class="footer__link footer__link-mail" href="mailto:viefbix@icloud.com">Mail</a>
+							</li>
+							<li class="footer__item-list">
+								<a class="footer__link footer__link-telegram" href="https://t.me/alexViefbix" target="_blank">Telegram</a>
+							</li>
+							<li class="footer__item-list">
+								<a class="footer__link footer__link-instagram" href="https://instagram.com/alex_viefbix?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__bottom">
+						<p class="footer__copyright">Все права защищены. 2023</p>
+						<p class="footer__text">Политика обработки данных</p>
+					</div>
 				</div>
 			</footer>
 		</div>

@@ -1,7 +1,6 @@
 @import "colors_variables";
 
 .services {
-	background-color: $colorDark;
 	padding: 75px 0 150px 0;
 	
 	@media (max-width: 1199px) {
@@ -73,6 +72,7 @@
 
 	&__description {
 		flex: 0 1 calc(50% - 35px);
+		color: $colorWhite;
 
 		@media (max-width: 767px) {
 			flex: 1 1 100%;

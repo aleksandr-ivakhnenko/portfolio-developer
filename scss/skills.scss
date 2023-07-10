@@ -9,6 +9,7 @@
 
 	&__title {
 		margin-bottom: 80px;
+		color: $colorWhite;
 		
 		@media (max-width: 1199px) {
 			margin-bottom: 60px;
@@ -63,7 +64,12 @@
 }
 
 .skill {
+	background-color: $colorWhite;
+	padding: 40px;
+	border-radius: 30px;
 	flex: 0 1 calc(50% - 23.5px);
+	display: flex;
+	flex-direction: column;
 	
 	@media (max-width: 1199px) {
 		flex: 0 1 calc(50% - 18.5px);
@@ -75,6 +81,7 @@
 
 	&__subtitle {
 		margin-bottom: 15px;
+		flex: 1 1 auto;
 
 		@media (max-width: 1199px) {
 			margin-bottom: 13px;

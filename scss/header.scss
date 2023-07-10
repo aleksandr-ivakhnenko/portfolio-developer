@@ -5,24 +5,6 @@
 	z-index: 1;
 	width: 100%;
 
-	&__overlay {
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100vh;
-		z-index: 5;
-		background-color: $colorDark;
-		opacity: 0;
-		visibility: hidden;
-		transition: opacity 1s ease-in-out,
-					visibility 1s ease-in-out;
-
-		&_preload {
-			opacity: 1;
-			visibility: visible;
-		}
-	}
-
 	&__inner {
 		position: relative;
 		display: flex;
@@ -36,71 +18,16 @@
 
 	&__logo {
 		flex: 1 1 auto;
-		height: 68px;
 	}
 	
 	&__logo-link {
-		display: flex;
-		align-items: center;
-		position: absolute;
-		z-index: 10;
-		top: 21.5px;
-		left: 0;
-		transition: transform 1s ease-in-out,
-					top 1s ease-in-out,
-					left 1s ease-in-out;
 
-		@media (max-width: 1199px) {
-			top: 17px;
-		}
-
-		&_open {
-			z-index: 0;
-		}
-
-		&_preload {
-			top: 50vh;
-			transform: translateY(-50vh);
-			left: 50%;
-			transform: translateX(-50%);
-		}
 	}
 
-	&__logo-left {
-		transition: opacity 1.5s ease-in-out,
-					transform 1.5s ease-in-out;
-		opacity: 1;
-		visibility: visible;
-		
-		&_preload {
-			transform: translateX(-1000%) rotate(-360deg);
-			opacity: 0;
-			visibility: hidden;
-		}
-	}
+	&__logo-img {
 
-	&__logo-line {
-		margin: 0 10px;
-		width: 2px;
-		height: 55px;
-		background-color: $colorWhite;
-		transition: height 1.5s ease-in-out;
-		
-		&_preload {
-			height: 0;
-		}
-	}
-
-	&__logo-right {
-		transition: opacity 1.5s ease-in-out,
-					transform 1.5s ease-in-out;
-		opacity: 1;
-		visibility: visible;
-
-		&_preload {
-			transform: translateY(-1000%);
-			opacity: 0;
-			visibility: hidden;
+		@media (max-width: 767px) {
+			height: 55px;
 		}
 	}
 	

@@ -40,6 +40,7 @@
     
     &__img {
         display: block;
+        height: 55px;
     }
 
     &__nav {
@@ -63,13 +64,14 @@
         color: $colorWhite;
         text-transform: uppercase;
     }
-
+    
     &__contacts {
     }
-
+    
     &__text {
         font-size: 16px;
         line-height: 22px;
+        color: $colorWhite;
         opacity: 0.5;
         margin-bottom: 7px;
     }

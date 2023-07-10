@@ -94,6 +94,7 @@
 .project__description {
   font-size: 30px;
   line-height: 39px;
+  color: #FFFFFF;
 }
 @media (max-width: 1199px) {
   .project__description {

@@ -10,6 +10,7 @@
 @import "skills.css";
 @import "services.css";
 @import "contact-me.css";
+@import "footer.css";
 body {
   font-family: "IBM Plex Mono";
   font-size: 18px;
@@ -22,7 +23,6 @@ body {
 
 h1, h2, h3, p, a, span, button, input {
   letter-spacing: -0.03em;
-  color: #FFFFFF;
 }
 
 .wrapper {
@@ -36,6 +36,7 @@ h1, h2, h3, p, a, span, button, input {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+  background-color: #000000;
 }
 
 .main {
@@ -45,14 +46,13 @@ h1, h2, h3, p, a, span, button, input {
 }
 
 .container {
-  max-width: 1150px;
+  width: 1150px;
   margin: 0 auto;
 }
 @media (max-width: 1199px) {
   .container {
     width: 100%;
     padding: 0 15px;
-    margin: 0;
   }
 }
 @media (max-width: 767px) {
